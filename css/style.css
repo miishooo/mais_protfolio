@@ -2116,8 +2116,12 @@ body {
   top: 0.75rem;
   left: 0.75rem;
   font-size: 0.55rem;
+  radius: 0.25rem;
 }
-
+img {
+  border-radius: 20px;
+  padding: 10px;
+}
 .tech-card__rule-wrap {
   position: absolute;
   bottom: 0.75rem;
