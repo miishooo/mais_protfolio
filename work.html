@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Work — Mais Fahad</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-page="work">
+    <div class="site">
+      <!-- Very subtle pixel grid over entire site -->
+      <div class="site-grid" aria-hidden="true"></div>
+
+      <!-- ===== NAVIGATION ===== -->
+      <header class="nav" id="nav">
+        <nav class="nav__inner">
+          <a href="index.html" class="nav__logo">
+            <div class="nav__logo-mark"><span>MF</span></div>
+            <div class="nav__logo-text">
+              <span class="nav__logo-name">Mais Fahad</span>
+              <span class="label-mono nav__logo-role">IT STUDENT &amp; DESIGNER</span>
+            </div>
+          </a>
+
+          <!-- Desktop links -->
+          <div class="nav__links">
+            <a href="index.html" class="nav__link">Home</a>
+            <a href="work.html" class="nav__link is-active">Work</a>
+            <a href="tech.html" class="nav__link">Tech</a>
+            <a href="about.html" class="nav__link">About</a>
+            <a href="contact.html" class="nav__link">Contact</a>
+            <a href="contact.html" class="btn-primary nav__cta">Let's Talk</a>
+          </div>
+
+          <!-- Mobile hamburger -->
+          <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu" type="button">
+            <span class="nav__toggle-bar"></span>
+            <span class="nav__toggle-bar"></span>
+            <span class="nav__toggle-bar"></span>
+          </button>
+        </nav>
+
+        <!-- Mobile menu (opened by the hamburger) -->
+        <div class="nav__mobile" id="mobile-menu">
+          <a href="index.html" class="nav__mobile-link">Home</a>
+          <a href="work.html" class="nav__mobile-link is-active">Work</a>
+          <a href="tech.html" class="nav__mobile-link">Tech</a>
+          <a href="about.html" class="nav__mobile-link">About</a>
+          <a href="contact.html" class="nav__mobile-link">Contact</a>
+        </div>
+      </header>
+
+      <!-- ===== PAGE CONTENT ===== -->
+      <main class="site-main page-enter">
+<div class="work-page">
+  <!-- ===== HEADER ===== -->
+  <div class="work-header">
+    <div class="section-label work-header__label">[SYS.04] WORK</div>
+    <div class="work-header__row">
+      <div>
+        <h1 class="work-header__title">Selected Work</h1>
+        <p class="work-header__text">A curated collection of design projects spanning brand identity, print, social media, and educational design.</p>
+      </div>
+      <div class="label-mono work-header__count" id="work-count"></div>
+    </div>
+  </div>
+
+  <!-- ===== FILTER BAR ===== -->
+  <div class="work-filters" id="work-filters">
+    <button type="button" class="work-filter is-active" data-filter="All">All</button>
+    <button type="button" class="work-filter" data-filter="Branding">Branding</button>
+    <button type="button" class="work-filter" data-filter="Social Media">Social Media</button>
+    <button type="button" class="work-filter" data-filter="Print">Print</button>
+    <button type="button" class="work-filter" data-filter="Motion">Motion</button>
+    <button type="button" class="work-filter" data-filter="Educational Design">Educational Design</button>
+  </div>
+
+  <!-- ===== GRID (cards rendered by js/script.js from the project data) ===== -->
+  <div class="work-grid" id="work-grid"></div>
+
+  <div class="work-empty" id="work-empty" hidden>
+    <span class="label-mono">NO PROJECTS IN THIS CATEGORY YET</span>
+  </div>
+</div>
+      </main>
+      <!-- Editable templates populated from the project data in js/script.js. -->
+      <template id="work-org-badge">
+        <span class="tag work-tag work-org">{{organization}}</span>
+      </template>
+      <template id="work-project-subtitle">
+        <div class="work-card__subtitle">{{subtitle}}</div>
+      </template>
+      <template id="work-project-card">
+        <a href="project.html?id={{id}}" class="neon-card work-card">
+          <div class="work-card__thumb">
+            <div class="work-card__bg">
+            </div>
+            <div class="work-card__dots">
+            </div>
+            <div class="work-card__glow-wrap">
+              <div class="work-card__glow">
+              </div>
+            </div>
+            <div class="work-card__corner work-card__corner--left">
+              <span class="label-mono work-card__corner-text">{{label}}</span>
+            </div>
+            <div class="work-card__corner work-card__corner--right">
+              <span class="label-mono work-card__corner-text">{{year}}</span>
+            </div>
+            <div class="work-card__hover">
+              <span class="work-card__hover-text">{{action}}</span>
+            </div>
+            <div class="work-card__line">
+            </div>
+          </div>
+          <div class="work-card__body">
+            <div class="work-card__head">
+              <div>
+                <h3 class="work-card__title">{{title}}</h3>{{subtitle}}</div>
+              <div class="work-card__arrow">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="7" y1="17" x2="17" y2="7"/>
+                  <polyline points="7 7 17 7 17 17"/>
+                </svg>
+              </div>
+            </div>
+            <div class="work-card__meta">
+              <span class="tag work-tag work-card__category">{{category}}</span>
+              <span class="label-mono work-card__dot">·</span>{{organizationBadge}}</div>
+          </div>
+        </a>
+      </template>
+      <template id="work-placeholder-card">
+        <div class="work-placeholder">
+          <div class="work-placeholder__thumb">
+            <div class="work-placeholder__dots">
+            </div>
+            <div class="work-placeholder__center">
+              <div class="work-placeholder__badge">
+                <span class="label-mono work-placeholder__badge-text">UPCOMING</span>
+              </div>
+            </div>
+            <div class="work-placeholder__line">
+            </div>
+          </div>
+          <div class="work-card__body">
+            <div class="work-placeholder__bar-title">
+            </div>
+            <div class="work-card__meta">
+              <div class="work-placeholder__bar-tag">
+              </div>
+              <span class="label-mono work-card__dot work-card__dot--faint">·</span>{{organizationBadge}}</div>
+          </div>
+        </div>
+      </template>
+
+
+      <!-- ===== FOOTER ===== -->
+      <footer class="footer">
+        <div class="footer__inner">
+          <div class="footer__brand">
+            <div class="footer__logo-mark"><span>MF</span></div>
+            <span class="label-mono">© 2026 MAIS FAHAD</span>
+          </div>
+
+          <div class="footer__nav">
+            <a href="work.html" class="label-mono">WORK</a>
+            <a href="tech.html" class="label-mono">TECH</a>
+            <a href="about.html" class="label-mono">ABOUT</a>
+            <a href="contact.html" class="label-mono">CONTACT</a>
+          </div>
+
+          <div class="footer__social">
+            <a href="mailto:maeesfahad@gmail.com" class="label-mono">EMAIL</a>
+            <span class="footer__sep">·</span>
+            <a href="https://github.com/miishooo" target="_blank" rel="noopener noreferrer" class="label-mono">GITHUB</a>
+            <span class="footer__sep">·</span>
+            <a href="https://x.com/it_miso07?s=11" target="_blank" rel="noopener noreferrer" class="label-mono">X</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

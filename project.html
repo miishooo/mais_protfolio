@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project — Mais Fahad</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-page="project">
+    <div class="site">
+      <!-- Very subtle pixel grid over entire site -->
+      <div class="site-grid" aria-hidden="true"></div>
+
+      <!-- ===== NAVIGATION ===== -->
+      <header class="nav" id="nav">
+        <nav class="nav__inner">
+          <a href="index.html" class="nav__logo">
+            <div class="nav__logo-mark"><span>MF</span></div>
+            <div class="nav__logo-text">
+              <span class="nav__logo-name">Mais Fahad</span>
+              <span class="label-mono nav__logo-role">IT STUDENT &amp; DESIGNER</span>
+            </div>
+          </a>
+
+          <!-- Desktop links -->
+          <div class="nav__links">
+            <a href="index.html" class="nav__link">Home</a>
+            <a href="work.html" class="nav__link is-active">Work</a>
+            <a href="tech.html" class="nav__link">Tech</a>
+            <a href="about.html" class="nav__link">About</a>
+            <a href="contact.html" class="nav__link">Contact</a>
+            <a href="contact.html" class="btn-primary nav__cta">Let's Talk</a>
+          </div>
+
+          <!-- Mobile hamburger -->
+          <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu" type="button">
+            <span class="nav__toggle-bar"></span>
+            <span class="nav__toggle-bar"></span>
+            <span class="nav__toggle-bar"></span>
+          </button>
+        </nav>
+
+        <!-- Mobile menu (opened by the hamburger) -->
+        <div class="nav__mobile" id="mobile-menu">
+          <a href="index.html" class="nav__mobile-link">Home</a>
+          <a href="work.html" class="nav__mobile-link is-active">Work</a>
+          <a href="tech.html" class="nav__mobile-link">Tech</a>
+          <a href="about.html" class="nav__mobile-link">About</a>
+          <a href="contact.html" class="nav__mobile-link">Contact</a>
+        </div>
+      </header>
+
+      <!-- ===== PAGE CONTENT ===== -->
+      <main class="site-main page-enter">
+<!-- Case study is rendered by js/script.js from project.html?id=<project id> -->
+<div id="project-root"></div>
+      </main>
+      <!-- Editable templates populated from the project data in js/script.js. -->
+      <template id="project-tiles">
+        <div class="project-tiles" data-base="{{baseColor}}" data-accent-color="{{accentColor}}">{{tiles}}</div>
+      </template>
+      <template id="project-previous-link">
+        <a href="project.html?id={{id}}" class="btn-ghost project-nav__link">← {{title}}</a>
+      </template>
+      <template id="project-next-link">
+        <a href="project.html?id={{id}}" class="btn-ghost project-nav__link">{{title}} →</a>
+      </template>
+      <template id="project-palette-dot">
+        <div class="project-final__dot" data-swatch="{{color}}">
+        </div>
+      </template>
+      <template id="project-direction-swatch">
+        <div class="project-swatch-square project-swatch-square--{{variant}}">
+        </div>
+      </template>
+      <template id="project-breadcrumb">
+        <div class="project-breadcrumb">
+          <a href="work.html" class="label-mono project-breadcrumb__link">WORK</a>
+          <span class="label-mono project-breadcrumb__sep">/</span>
+          <span class="label-mono project-breadcrumb__current">{{title}}</span>
+        </div>
+      </template>
+      <template id="project-metadata-row">
+        <div class="project-meta__row">
+          <span class="label-mono project-meta__label">{{label}}</span>
+          <span class="project-meta__value">{{value}}</span>
+        </div>
+      </template>
+      <template id="project-metadata">
+        <div class="project-meta">{{rows}}</div>
+      </template>
+      <template id="project-banner-subtitle">
+        <div class="label-mono project-banner__subtitle">{{subtitle}}</div>
+      </template>
+      <template id="project-banner">
+        <div class="project-banner">
+          <div class="project-banner__bg">
+          </div>
+          <div class="project-banner__dots">
+          </div>
+          <div class="project-banner__layer">
+            <div class="project-banner__glow" aria-hidden="true">
+            </div>
+          </div>
+          <div class="project-banner__layer">
+            <div class="project-banner__center">
+              <div class="project-banner__title">{{title}}</div>{{subtitle}}</div>
+          </div>
+          <div class="label-mono project-banner__corner project-banner__corner--left">{{label}} / {{type}}</div>
+          <div class="label-mono project-banner__corner project-banner__corner--right">{{year}}</div>
+          <div class="project-banner__line">
+          </div>
+        </div>
+      </template>
+      <template id="project-section-card">
+        <div class="neon-card project-section" data-accent="{{accent}}">
+          <div class="project-section__glow" aria-hidden="true">
+          </div>
+          <div class="section-label project-section__label">{{label}}</div>{{content}}</div>
+      </template>
+      <template id="project-tile">
+        <div class="project-tile project-tile--{{variant}}">
+          <div class="project-tile__dots">
+          </div>
+          <div class="project-tile__caption">
+            <span class="label-mono project-tile__label">{{label}}</span>
+          </div>
+        </div>
+      </template>
+      <template id="project-all-previous">
+        <a href="work.html" class="btn-ghost">← All Projects</a>
+      </template>
+      <template id="project-all-next">
+        <a href="work.html" class="btn-ghost">All Projects →</a>
+      </template>
+      <template id="project-navigation">
+        <div class="thin-divider project-divider">
+        </div>
+        <div class="project-nav">{{previous}}{{next}}</div>
+      </template>
+      <template id="project-color-swatch">
+        <div class="project-swatch" data-swatch="{{color}}">
+          <div class="project-swatch__chip">
+          </div>
+          <div class="project-swatch__name">{{name}}</div>
+          <div class="label-mono project-swatch__hex">{{hex}}</div>
+          <div class="label-mono">{{role}}</div>
+        </div>
+      </template>
+      <template id="project-typography-row">
+        <div class="project-type-row">
+          <div class="project-type-row__sample">
+            <div class="project-type-row__name">{{name}}</div>
+          </div>
+          <div class="project-type-row__info">
+            <div class="label-mono project-type-row__role">{{role}}</div>
+            <div class="label-mono">{{weight}}</div>
+          </div>
+        </div>
+      </template>
+      <template id="project-visual-element">
+        <div class="project-element">
+          <span class="project-element__text">{{label}}</span>
+        </div>
+      </template>
+      <template id="project-florra-overview">
+        <p class="project-text project-text--overview project-text--spaced">{{overview}}</p>
+      </template>
+      <template id="project-palette">
+        <div class="project-palette">{{swatches}}</div>
+      </template>
+      <template id="project-typography">
+        <div class="project-type-list">{{rows}}</div>
+      </template>
+      <template id="project-visual-elements">
+        <p class="project-text project-text--gap-sm">The brand identity draws from botanical illustration traditions — delicate line work, organic forms, and a restrained decorative vocabulary that references pressed flora and vintage apothecary aesthetics.</p>
+        <div class="project-elements">{{elements}}</div>
+      </template>
+      <template id="project-final-identity">
+        <p class="project-text project-text--gap-md">The completed Florra identity system is a cohesive, expandable brand language that communicates artisanal craft and natural origins. The visual system is designed to work across print, packaging, and digital touchpoints with equal clarity.</p>
+        <div class="project-final">
+          <div class="project-final__bg">
+          </div>
+          <div class="project-final__dots">
+          </div>
+          <div class="project-final__center">
+            <div class="project-final__word">Florra</div>
+          </div>
+          <div class="project-final__palette">{{paletteDots}}</div>
+        </div>
+      </template>
+      <template id="project-florra-case-study">
+        <div class="project-page">{{breadcrumb}}<div class="project-hero">
+            <div>
+              <div class="project-hero__kicker project-hero__kicker--florra">Brand Identity</div>
+              <h1 class="project-hero__title project-hero__title--florra">Florra</h1>
+              <p class="project-hero__text">{{description}}</p>
+            </div>{{metadata}}</div>{{banner}}<div class="project-sections">{{overview}}{{palette}}{{typography}}{{visualElements}}{{applications}}{{finalIdentity}}</div>{{navigation}}</div>
+      </template>
+      <template id="project-subtitle">
+        <div class="project-hero__subtitle">{{subtitle}}</div>
+      </template>
+      <template id="project-overview">
+        <p class="project-text project-text--overview">{{overview}}</p>
+      </template>
+      <template id="project-visual-direction">
+        <div class="project-direction">
+          <div class="project-direction__bg">
+          </div>
+          <div class="project-direction__dots">
+          </div>
+          <div class="project-direction__swatches">{{swatches}}</div>
+          <div class="label-mono project-direction__caption">[VISUAL_IDENTITY // {{label}}]</div>
+        </div>
+      </template>
+      <template id="project-generic-case-study">
+        <div class="project-page">{{breadcrumb}}<div class="project-hero">
+            <div>
+              <div class="project-hero__kicker">{{type}}</div>
+              <h1 class="project-hero__title project-hero__title--generic">{{title}}</h1>{{subtitle}}<p class="project-hero__text">{{description}}</p>
+            </div>{{metadata}}</div>{{banner}}<div class="project-sections">{{overview}}{{deliverables}}{{visualDirection}}<div class="neon-card project-cta">
+              <div>
+                <div class="section-label project-cta__label">FULL CASE STUDY</div>
+                <p class="project-cta__text">A detailed case study for this project is coming soon.</p>
+              </div>
+              <div class="project-cta__status">
+                <div class="project-cta__dot">
+                </div>
+                <span class="label-mono project-cta__status-text">IN PROGRESS</span>
+              </div>
+            </div>
+          </div>{{navigation}}</div>
+      </template>
+      <template id="project-not-found">
+        <div class="project-missing">
+          <div class="section-label project-missing__label">404 // NOT FOUND</div>
+          <h1 class="project-missing__title">Project not found</h1>
+          <a href="work.html" class="btn-ghost project-missing__link">← Back to Work</a>
+        </div>
+      </template>
+
+
+      <!-- ===== FOOTER ===== -->
+      <footer class="footer">
+        <div class="footer__inner">
+          <div class="footer__brand">
+            <div class="footer__logo-mark"><span>MF</span></div>
+            <span class="label-mono">© 2026 MAIS FAHAD</span>
+          </div>
+
+          <div class="footer__nav">
+            <a href="work.html" class="label-mono">WORK</a>
+            <a href="tech.html" class="label-mono">TECH</a>
+            <a href="about.html" class="label-mono">ABOUT</a>
+            <a href="contact.html" class="label-mono">CONTACT</a>
+          </div>
+
+          <div class="footer__social">
+            <a href="mailto:maeesfahad@gmail.com" class="label-mono">EMAIL</a>
+            <span class="footer__sep">·</span>
+            <a href="https://github.com/miishooo" target="_blank" rel="noopener noreferrer" class="label-mono">GITHUB</a>
+            <span class="footer__sep">·</span>
+            <a href="https://x.com/it_miso07?s=11" target="_blank" rel="noopener noreferrer" class="label-mono">X</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

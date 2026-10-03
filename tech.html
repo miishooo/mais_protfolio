@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech — Mais Fahad</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-page="tech">
+    <div class="site">
+      <!-- Very subtle pixel grid over entire site -->
+      <div class="site-grid" aria-hidden="true"></div>
+
+      <!-- ===== NAVIGATION ===== -->
+      <header class="nav" id="nav">
+        <nav class="nav__inner">
+          <a href="index.html" class="nav__logo">
+            <div class="nav__logo-mark"><span>MF</span></div>
+            <div class="nav__logo-text">
+              <span class="nav__logo-name">Mais Fahad</span>
+              <span class="label-mono nav__logo-role">IT STUDENT &amp; DESIGNER</span>
+            </div>
+          </a>
+
+          <!-- Desktop links -->
+          <div class="nav__links">
+            <a href="index.html" class="nav__link">Home</a>
+            <a href="work.html" class="nav__link">Work</a>
+            <a href="tech.html" class="nav__link is-active">Tech</a>
+            <a href="about.html" class="nav__link">About</a>
+            <a href="contact.html" class="nav__link">Contact</a>
+            <a href="contact.html" class="btn-primary nav__cta">Let's Talk</a>
+          </div>
+
+          <!-- Mobile hamburger -->
+          <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu" type="button">
+            <span class="nav__toggle-bar"></span>
+            <span class="nav__toggle-bar"></span>
+            <span class="nav__toggle-bar"></span>
+          </button>
+        </nav>
+
+        <!-- Mobile menu (opened by the hamburger) -->
+        <div class="nav__mobile" id="mobile-menu">
+          <a href="index.html" class="nav__mobile-link">Home</a>
+          <a href="work.html" class="nav__mobile-link">Work</a>
+          <a href="tech.html" class="nav__mobile-link is-active">Tech</a>
+          <a href="about.html" class="nav__mobile-link">About</a>
+          <a href="contact.html" class="nav__mobile-link">Contact</a>
+        </div>
+      </header>
+
+      <!-- ===== PAGE CONTENT ===== -->
+      <main class="site-main page-enter">
+<div class="tech">
+  <!-- ===== HEADER ===== -->
+  <div class="tech__header">
+    <div class="section-label tech__eyebrow">[SYS.05] TECH PROJECTS</div>
+    <h1 class="tech__title">Tech Projects</h1>
+    <p class="tech__intro">
+      Practical projects where I combine design thinking with technical skills —
+      building systems that are both functional and visually coherent.
+    </p>
+  </div>
+
+  <!-- ===== PROJECTS ===== -->
+  <div class="tech__list">
+    <!-- WabiSabi -->
+    <div class="neon-card tech-card tech-card--blue">
+      <div class="tech-card__grid">
+        <!-- Visual panel -->
+        <div class="tech-card__visual">
+          <div class="tech-card__visual-bg"></div>
+          <div class="tech-card__visual-dots"></div>
+          <div class="tech-card__glow" aria-hidden="true"></div>
+          <div class="tech-card__visual-center">
+            <div class="label-mono tech-card__code">TECH.01</div>
+            <div class="tech-card__name">WabiSabi</div>
+            <div class="tag tech-card__type">Tourism Website</div>
+            <div class="tech-card__dots">
+              <div class="tech-dot tech-color--orange" title="HTML"></div>
+              <div class="tech-dot tech-color--blue" title="CSS"></div>
+              <div class="tech-dot tech-color--yellow" title="JavaScript"></div>
+              <div class="tech-dot tech-color--cyan" title="JSON"></div>
+            </div>
+          </div>
+          <div class="label-mono tech-card__corner">SCREENSHOT_01.png</div>
+          <div class="tech-card__rule-wrap">
+            <div class="tech-card__rule"></div>
+          </div>
+        </div>
+
+        <!-- Info panel -->
+        <div class="tech-card__info">
+          <div>
+            <div class="section-label tech-card__label tech-card__label--accent">DESCRIPTION</div>
+            <p class="tech-card__description">
+              A tourism discovery platform inspired by the Japanese wabi-sabi philosophy — finding beauty in the imperfect. Features destination listings, curated travel information, advanced filters, a favorites system, and a contact module.
+            </p>
+          </div>
+
+          <!-- Stack -->
+          <div>
+            <div class="section-label tech-card__label">TECH STACK</div>
+            <div class="tech-card__chips">
+              <span class="tag tech-stack-tag tech-color--orange">HTML</span>
+              <span class="tag tech-stack-tag tech-color--blue">CSS</span>
+              <span class="tag tech-stack-tag tech-color--yellow">JavaScript</span>
+              <span class="tag tech-stack-tag tech-color--cyan">JSON</span>
+            </div>
+          </div>
+
+          <!-- Role -->
+          <div class="tech-card__role">
+            <div class="section-label tech-card__role-label tech-card__label--accent">MY ROLE</div>
+            <p class="tech-card__role-text">CSS development and contribution to HTML/JavaScript</p>
+            <p class="label-mono tech-card__team-note">COLLABORATIVE PROJECT</p>
+          </div>
+
+          <!-- Features -->
+          <div>
+            <div class="section-label tech-card__label">KEY FEATURES</div>
+            <div class="tech-card__chips">
+              <span class="tech-feature">Destinations listing</span>
+              <span class="tech-feature">Tourism information</span>
+              <span class="tech-feature">Advanced filters</span>
+              <span class="tech-feature">Favorites system</span>
+              <span class="tech-feature">Contact functionality</span>
+            </div>
+          </div>
+
+          <!-- Action buttons -->
+          <div class="tech-card__actions">
+            <button type="button" class="btn-primary tech-card__btn tech-card__btn-primary">View Project</button>
+            <button type="button" class="btn-ghost tech-card__btn tech-card__btn-ghost">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.49.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.56 9.56 0 0 1 12 6.8c.85.0 1.71.11 2.51.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10.01 10.01 0 0 0 22 12c0-5.52-4.48-10-10-10z"/>
+              </svg>
+              GitHub
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- AMI Studio -->
+    <div class="neon-card tech-card tech-card--purple">
+      <div class="tech-card__grid">
+        <!-- Visual panel -->
+        <div class="tech-card__visual">
+          <div class="tech-card__visual-bg"></div>
+          <div class="tech-card__visual-dots"></div>
+          <div class="tech-card__glow" aria-hidden="true"></div>
+          <div class="tech-card__visual-center">
+            <div class="label-mono tech-card__code">TECH.02</div>
+            <div class="tech-card__name">AMI Studio</div>
+            <div class="tag tech-card__type">E-Commerce Website</div>
+            <div class="tech-card__dots">
+              <div class="tech-dot tech-color--orange" title="HTML"></div>
+              <div class="tech-dot tech-color--blue" title="CSS"></div>
+              <div class="tech-dot tech-color--yellow" title="JavaScript"></div>
+              <div class="tech-dot tech-color--purple" title="PHP"></div>
+              <div class="tech-dot tech-color--cyan" title="MySQL"></div>
+            </div>
+          </div>
+          <div class="label-mono tech-card__corner">SCREENSHOT_01.png</div>
+          <div class="tech-card__rule-wrap">
+            <div class="tech-card__rule"></div>
+          </div>
+        </div>
+
+        <!-- Info panel -->
+        <div class="tech-card__info">
+          <div>
+            <div class="section-label tech-card__label tech-card__label--accent">DESCRIPTION</div>
+            <p class="tech-card__description">
+              A full-stack e-commerce platform for a photography studio. Includes a public storefront, a user dashboard, and a comprehensive admin panel with full CRUD operations, order management, and status tracking.
+            </p>
+          </div>
+
+          <!-- Stack -->
+          <div>
+            <div class="section-label tech-card__label">TECH STACK</div>
+            <div class="tech-card__chips">
+              <span class="tag tech-stack-tag tech-color--orange">HTML</span>
+              <span class="tag tech-stack-tag tech-color--blue">CSS</span>
+              <span class="tag tech-stack-tag tech-color--yellow">JavaScript</span>
+              <span class="tag tech-stack-tag tech-color--purple">PHP</span>
+              <span class="tag tech-stack-tag tech-color--cyan">MySQL</span>
+            </div>
+          </div>
+
+          <!-- Role -->
+          <div class="tech-card__role">
+            <div class="section-label tech-card__role-label tech-card__label--accent">MY ROLE</div>
+            <p class="tech-card__role-text">Complete CSS development + Admin Dashboard + User Dashboard</p>
+            <p class="label-mono tech-card__team-note">FULL-STACK COLLABORATIVE PROJECT</p>
+          </div>
+
+          <!-- Features -->
+          <div>
+            <div class="section-label tech-card__label">KEY FEATURES</div>
+            <div class="tech-card__chips">
+              <span class="tech-feature">Admin: Users management</span>
+              <span class="tech-feature">Admin: Orders &amp; status updates</span>
+              <span class="tech-feature">Admin: Product CRUD</span>
+              <span class="tech-feature">User: Cart &amp; checkout</span>
+              <span class="tech-feature">User: Favorites</span>
+              <span class="tech-feature">User: Order tracking</span>
+            </div>
+          </div>
+
+          <!-- Action buttons -->
+          <div class="tech-card__actions">
+            <button type="button" class="btn-primary tech-card__btn tech-card__btn-primary">View Project</button>
+            <button type="button" class="btn-ghost tech-card__btn tech-card__btn-ghost">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.49.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.56 9.56 0 0 1 12 6.8c.85.0 1.71.11 2.51.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10.01 10.01 0 0 0 22 12c0-5.52-4.48-10-10-10z"/>
+              </svg>
+              GitHub
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== BOTTOM NOTE ===== -->
+  <div class="tech__footnote">
+    <div class="thin-divider tech__footnote-line"></div>
+    <span class="label-mono">MORE PROJECTS IN DEVELOPMENT</span>
+    <div class="thin-divider tech__footnote-line"></div>
+  </div>
+</div>
+      </main>
+
+      <!-- ===== FOOTER ===== -->
+      <footer class="footer">
+        <div class="footer__inner">
+          <div class="footer__brand">
+            <div class="footer__logo-mark"><span>MF</span></div>
+            <span class="label-mono">© 2026 MAIS FAHAD</span>
+          </div>
+
+          <div class="footer__nav">
+            <a href="work.html" class="label-mono">WORK</a>
+            <a href="tech.html" class="label-mono">TECH</a>
+            <a href="about.html" class="label-mono">ABOUT</a>
+            <a href="contact.html" class="label-mono">CONTACT</a>
+          </div>
+
+          <div class="footer__social">
+            <a href="mailto:maeesfahad@gmail.com" class="label-mono">EMAIL</a>
+            <span class="footer__sep">·</span>
+            <a href="https://github.com/miishooo" target="_blank" rel="noopener noreferrer" class="label-mono">GITHUB</a>
+            <span class="footer__sep">·</span>
+            <a href="https://x.com/it_miso07?s=11" target="_blank" rel="noopener noreferrer" class="label-mono">X</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
