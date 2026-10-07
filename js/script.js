@@ -32,15 +32,25 @@
 var projects = [
   {
     id: "florra",
+
     title: "Florra",
     category: "Branding",
     org: "Personal",
     label: "BRAND.01",
     colors: ["#9333ea", "#ec4899"],
-    year: "2024",
+    year: "2025",
     type: "Brand Identity",
     role: "Brand Identity Designer",
-    tools: ["Adobe Illustrator", "Adobe Photoshop", "Figma"],
+    tools: ["Canva"],
+    // Images
+  cover: "image/flora1.png",
+
+  images: [
+    "",
+    "",
+    "",
+  ],
+
     description:
       "A botanical lifestyle brand built around natural beauty, handcrafted products, and an organic visual identity that feels both modern and rooted in nature.",
     overview:
@@ -55,22 +65,23 @@ var projects = [
       "Social Templates",
       "Pattern System",
     ],
+
     fullCaseStudy: true,
+
     palette: [
-      { name: "Sage Green", hex: "#7A8C6E", role: "Primary" },
-      { name: "Warm Beige", hex: "#D4C4A0", role: "Background" },
-      { name: "Deep Forest", hex: "#3D4A32", role: "Text" },
-      { name: "Blush", hex: "#E8B4A0", role: "Accent" },
-      { name: "Cream", hex: "#F5EDD8", role: "Light" },
+      { name: "her fierceness", hex: "#641138" , role: "Primary" },
+      { name: "sage green", hex: "#939c7f" , role: "Secondary" },
+      { name: "Comfort Ivory", hex: "#faf6e3" , role: "Light" },
+      { name: "blue", hex: "#0c0549" , role: "Dark" },
     ],
     typography: [
       {
-        name: "Cormorant Garamond",
+        name: "El Messiri",
         role: "Headings / Display",
         weight: "Light 300 · Regular 400 · Semibold 600",
       },
       {
-        name: "DM Sans",
+        name: "DIN Next",
         role: "Body / Labels",
         weight: "Regular 400 · Medium 500",
       },
@@ -87,55 +98,85 @@ var projects = [
     ],
   },
   {
-    id: "ami-studio",
-    title: "AMI Studio",
-    category: "Branding",
-    org: "Personal",
-    label: "BRAND.02",
-    colors: ["#3b82f6", "#06b6d4"],
-    year: "2024",
-    type: "Brand Identity",
-    role: "Brand Identity Designer",
-    tools: ["Adobe Illustrator", "Figma"],
-    description:
-      "A clean, modern brand identity for AMI Studio — a photography and creative studio. The identity centers on minimalism, precision, and a sophisticated blue palette that evokes trust and clarity.",
-    overview:
-      "AMI Studio required a professional identity system that would communicate quality, precision, and creativity. The visual language draws from photography's relationship with light — clean whites, structured layouts, and a confident blue signature color. The result is a brand that feels premium without being cold.",
-    deliverables: [
-      "Logo & Variants",
-      "Color System",
+  id: "ami-studio",
+
+  title: "AMI Studio",
+  category: "Branding",
+  org: "Personal",
+  label: "BRAND.02",
+
+  colors: ["#3b82f6", "#06b6d4"],
+
+  year: "2026",
+  type: "Brand Identity",
+  role: "Brand Identity Designer",
+  tools: ["Canva"],
+
+  // Images
+  cover: "",
+
+  images: [
+    "",
+    "",
+    "",
+  ],
+
+  description:
+    "A clean, modern brand identity for AMI Studio — a photography and creative studio. The identity centers on minimalism, precision, and a sophisticated blue palette that evokes trust and clarity.",
+
+  overview:
+    "AMI Studio required a professional identity system that would communicate quality, precision, and creativity. The visual language draws from photography's relationship with light — clean whites, structured layouts, and a confident blue signature color. The result is a brand that feels premium without being cold.",
+
+   deliverables: [
+      "Logo System",
+      "Color Palette",
       "Typography",
-      "Business Card",
-      "Email Signature",
-      "Social Templates",
       "Brand Guidelines",
+      "Packaging",
+      "Stationery",
+      "Social Templates",
+      "Pattern System",
     ],
+
+    fullCaseStudy: true,
+
+    palette: [
+      { name: "Chestnut", hex: "#7a5244" },
+      { name: "Lavender", hex: "#c7b5ff" },
+      { name: "Cream", hex: "#f7e79a" },
+      { name: "Aqua", hex: "#9edfcf"  },
+      { name: "Blush", hex: "#f5a3b5" },
+    ],
+    typography: [
+      {
+        name: "frankfurter medium",
+        role: "Headings / Display",
+        weight: "Light 300 · Regular 400 · Semibold 600",
+      },
+      {
+        name: "29LT BUKRA",
+        role: "Body / Labels",
+        weight: "Regular 400 · Medium 500",
+      },
+    ],
+    applications: [
+       {
+    label: "Business Card",
+    image: "images/ami/business-card.jpg",
   },
   {
-    id: "tuwaiq-ds",
-    title: "Tuwaiq Club",
-    subtitle: "Data Science & AI",
-    category: "Branding",
-    org: "Tuwaiq",
-    label: "BRAND.03",
-    colors: ["#7c3aed", "#3b82f6"],
-    year: "2024",
-    type: "Event Branding",
-    role: "Graphic Designer",
-    tools: ["Adobe Illustrator", "Adobe Photoshop"],
-    description:
-      "Visual identity and event branding for Tuwaiq Club's Data Science & AI initiative — communicating technical ambition through a bold, structured aesthetic.",
-    overview:
-      "This project involved designing a visual system for Tuwaiq Club's data science and AI programming track. The design needed to feel technical and intelligent while remaining approachable and energetic for a university audience. A deep purple-to-blue gradient language was used to signal both depth and innovation.",
-    deliverables: [
-      "Event Logo",
-      "Poster Series",
-      "Social Media Kit",
-      "Banner Design",
-      "Certificate Template",
-      "Presentation Template",
+    label: "Letterhead",
+    image: "../image/ami3.jpg",
+  },
+      "Packaging Labels",
+      "Social Media Templates",
+      "Swing Tags",
+      "Brand Guidelines",
+      "Stamp",
+      "Tote Bag",
     ],
   },
+  
   {
     id: "tuwaiq-summer",
     title: "Tuwaiq Club",
@@ -161,30 +202,7 @@ var projects = [
       "Schedule Layout",
     ],
   },
-  {
-    id: "google-privacy",
-    title: "Google Club",
-    subtitle: "Data Privacy",
-    category: "Educational Design",
-    org: "GDG",
-    label: "EDU.02",
-    colors: ["#3b82f6", "#06b6d4"],
-    year: "2023",
-    type: "Educational Design",
-    role: "Graphic Designer",
-    tools: ["Adobe Illustrator", "Figma"],
-    description:
-      "Awareness campaign visuals for Google Developer Groups Al-Baha — Data Privacy Day. Clear, informative design that makes technical privacy concepts accessible.",
-    overview:
-      "Data Privacy Day required visual content that communicated complex information clearly while remaining engaging for a general campus audience. The design system used a cool blue palette to signal trust and security, with structured infographic layouts that simplify key privacy concepts.",
-    deliverables: [
-      "Campaign Posters",
-      "Infographic Series",
-      "Social Media Posts",
-      "Stories Templates",
-      "Event Banner",
-    ],
-  },
+
   {
     id: "programmers-day",
     title: "Programmer's Day",
@@ -232,6 +250,32 @@ var projects = [
       "Recap Graphics",
     ],
   },
+  {
+    id: "tuwaiq-ds",
+    title: "Tuwaiq Club",
+    subtitle: "Data Science & AI",
+    category: "Social Media",
+    org: "Tuwaiq",
+    label: "SOC.03",
+    colors: ["#7c3aed", "#3b82f6"],
+    year: "2024",
+    type: "Social Media Design",
+    role: "Graphic Designer",
+    tools: ["Adobe Illustrator", "Adobe Photoshop"],
+    description:
+      "Visual identity and event branding for Tuwaiq Club's Data Science & AI initiative — communicating technical ambition through a bold, structured aesthetic.",
+    overview:
+      "This project involved designing a visual system for Tuwaiq Club's data science and AI programming track. The design needed to feel technical and intelligent while remaining approachable and energetic for a university audience. A deep purple-to-blue gradient language was used to signal both depth and innovation.",
+    deliverables: [
+      "Event Logo",
+      "Poster Series",
+      "Social Media Kit",
+      "Banner Design",
+      "Certificate Template",
+      "Presentation Template",
+    ],
+  },
+
   {
     id: "tuwaiq-calendar",
     title: "Tuwaiq Calendar",
@@ -467,19 +511,29 @@ function applyColor(el, name, color) {
   }
   /* Grid of placeholder tiles; --b / --a hold the base and accent colours */
   function mockupGrid(items, base, accent) {
-    return renderTemplate("project-tiles", {
-      baseColor: base,
-      accentColor: accent,
-      tiles: items
-        .map(function (label, i) {
-          return renderTemplate("project-tile", {
-            variant: i % 3,
-            label: escapeHtml(label.toUpperCase()),
-          })
+  return renderTemplate("project-tiles", {
+    baseColor: base,
+    accentColor: accent,
+    tiles: items
+      .map(function (item, i) {
+        var label = typeof item === "string" ? item : item.label
+        var image = typeof item === "string" ? "" : item.image
+
+        return renderTemplate("project-tile", {
+          variant: i % 3,
+          label: escapeHtml(label.toUpperCase()),
+          image: image
+            ? '<img src="' +
+              escapeHtml(image) +
+              '" alt="' +
+              escapeHtml(label) +
+              '" class="project-tile__image">'
+            : "",
         })
-        .join(""),
-    })
-  }
+      })
+      .join(""),
+  })
+}
   function nav(adjacent) {
     var prev = adjacent.prev
     var next = adjacent.next
@@ -637,12 +691,74 @@ function applyColor(el, name, color) {
   function notFoundHtml() {
     return renderTemplate("project-not-found", {})
   }
+  function caseStudyHtml(p) {
+  var content = []
+
+  content.push(
+    sectionCard(
+      "[01] PROJECT OVERVIEW",
+      p.colors[0],
+      renderTemplate("project-overview", {
+        overview: escapeHtml(p.overview),
+      }),
+    ),
+  )
+
+  if (p.applications && p.applications.length) {
+    content.push(
+      sectionCard(
+        "[02] APPLICATIONS",
+        p.colors[1],
+        mockupGrid(p.applications, p.colors[0], p.colors[1]),
+      ),
+    )
+  }
+
+  if (p.images && p.images.length) {
+    content.push(
+      sectionCard(
+        "[03] PROJECT GALLERY",
+        p.colors[0],
+        mockupGrid(
+          p.images.map(function (image, i) {
+            return {
+              label: "IMAGE " + String(i + 1).padStart(2, "0"),
+              image: image,
+            }
+          }),
+          p.colors[0],
+          p.colors[1],
+        ),
+      ),
+    )
+  }
+
+  return renderTemplate("project-generic-case-study", {
+    breadcrumb: breadcrumb(
+      p.subtitle ? p.title + " — " + p.subtitle : p.title,
+    ),
+    type: escapeHtml(p.type),
+    title: escapeHtml(p.title),
+    subtitle: p.subtitle
+      ? renderTemplate("project-subtitle", {
+          subtitle: escapeHtml(p.subtitle),
+        })
+      : "",
+    description: escapeHtml(p.description),
+    metadata: meta(p),
+    banner: banner(p),
+    overview: content[0] || "",
+    deliverables: content[1] || "",
+    visualDirection: content[2] || "",
+    navigation: nav(getAdjacentProjects(p.id)),
+  })
+}
   /* ---- Render + select stylesheet themes ---- */
   var page
   if (!project) {
     page = create(notFoundHtml())
   } else {
-    page = create(id === "florra" ? florraHtml(project) : genericHtml(project))
+    page = create(caseStudyHtml(project))
     applyColor(page, "c1", project.colors[0])
     applyColor(page, "c2", project.colors[1])
     Array.prototype.forEach.call(

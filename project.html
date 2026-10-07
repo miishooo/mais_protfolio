@@ -119,14 +119,14 @@
           <div class="section-label project-section__label">{{label}}</div>{{content}}</div>
       </template>
       <template id="project-tile">
-        <div class="project-tile project-tile--{{variant}}">
-          <div class="project-tile__dots">
-          </div>
-          <div class="project-tile__caption">
-            <span class="label-mono project-tile__label">{{label}}</span>
-          </div>
-        </div>
-      </template>
+  <div class="project-tile project-tile--{{variant}}">
+    {{image}}
+    <div class="project-tile__dots"></div>
+    <div class="project-tile__caption">
+      <span class="label-mono project-tile__label">{{label}}</span>
+    </div>
+  </div>
+</template>
       <template id="project-all-previous">
         <a href="work.html" class="btn-ghost">← All Projects</a>
       </template>
@@ -214,23 +214,32 @@
         </div>
       </template>
       <template id="project-generic-case-study">
-        <div class="project-page">{{breadcrumb}}<div class="project-hero">
-            <div>
-              <div class="project-hero__kicker">{{type}}</div>
-              <h1 class="project-hero__title project-hero__title--generic">{{title}}</h1>{{subtitle}}<p class="project-hero__text">{{description}}</p>
-            </div>{{metadata}}</div>{{banner}}<div class="project-sections">{{overview}}{{deliverables}}{{visualDirection}}<div class="neon-card project-cta">
-              <div>
-                <div class="section-label project-cta__label">FULL CASE STUDY</div>
-                <p class="project-cta__text">A detailed case study for this project is coming soon.</p>
-              </div>
-              <div class="project-cta__status">
-                <div class="project-cta__dot">
-                </div>
-                <span class="label-mono project-cta__status-text">IN PROGRESS</span>
-              </div>
-            </div>
-          </div>{{navigation}}</div>
-      </template>
+  <div class="project-page">
+    {{breadcrumb}}
+
+    <div class="project-hero">
+      <div>
+        <div class="project-hero__kicker">{{type}}</div>
+        <h1 class="project-hero__title project-hero__title--generic">
+          {{title}}
+        </h1>
+        {{subtitle}}
+        <p class="project-hero__text">{{description}}</p>
+      </div>
+      {{metadata}}
+    </div>
+
+    {{banner}}
+
+    <div class="project-sections">
+      {{overview}}
+      {{deliverables}}
+      {{visualDirection}}
+    </div>
+
+    {{navigation}}
+  </div>
+</template>
       <template id="project-not-found">
         <div class="project-missing">
           <div class="section-label project-missing__label">404 // NOT FOUND</div>
