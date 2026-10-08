@@ -93,6 +93,7 @@
       <template id="work-project-card">
         <a href="project.html?id={{id}}" class="neon-card work-card">
           <div class="work-card__thumb">
+            {{coverImage}}
             <div class="work-card__bg">
             </div>
             <div class="work-card__dots">
@@ -115,6 +116,7 @@
           </div>
           <div class="work-card__body">
             <div class="work-card__head">
+      
               <div>
                 <h3 class="work-card__title">{{title}}</h3>{{subtitle}}</div>
               <div class="work-card__arrow">
@@ -132,7 +134,7 @@
       </template>
       <template id="work-placeholder-card">
         <div class="work-placeholder">
-          <div class="work-placeholder__thumb">
+          <div class="work-placeholder__thumb"
             <div class="work-placeholder__dots">
             </div>
             <div class="work-placeholder__center">

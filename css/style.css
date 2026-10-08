@@ -133,7 +133,6 @@ ol, ul, menu { list-style: none; }
 
 img, svg, video, canvas, audio, iframe, embed, object {
   display: block;
-  vertical-align: middle;
 }
 
 img, video {
@@ -1878,7 +1877,7 @@ body {
   top: 0.75rem;
   left: 0.75rem;
   font-size: 0.55rem;
-  radius: 0.25rem;
+  border-radius: 0.25rem;
 }
 img {
   border-radius: 20px;

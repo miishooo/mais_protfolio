@@ -324,7 +324,7 @@ var projects = [
     overview:
       "The Tuwaiq Club Calendar serves as both a practical planning tool and a branded touchpoint. The challenge was to balance data-dense calendar content with the club's visual identity — keeping the design clean and legible while remaining recognizably Tuwaiq. A blue-purple gradient system provides visual hierarchy across months.",
     images: [
-      {label: "Calendar Cover", image: "./image/tuwaiq/2648.png"}
+      "./image/tuwaiq/2648.png" ,
     ],
   },
    {
@@ -409,8 +409,12 @@ function applyColor(el, name, color) {
         year: escapeHtml(project.year),
         action: "View Project →",
         coverImage: project.cover
-          ? '<img src="' + escapeHtml(project.cover) + '" alt="' + escapeHtml(project.title) + '" class="work-card__image" loading="lazy">'
-          : "",
+  ? '<img src="' +
+    escapeHtml(project.cover) +
+    '" alt="' +
+    escapeHtml(project.title) +
+    '" class="work-card__image" loading="lazy">'
+  : "",
         title: escapeHtml(project.title),
         subtitle: project.subtitle
           ? renderTemplate("work-project-subtitle", {
@@ -521,6 +525,7 @@ function applyColor(el, name, color) {
     </a>
   `
 }
+
   /* A titled card; `accent` is a colour string (set as --accent on the card) */
   function sectionCard(label, accent, inner) {
     return renderTemplate("project-section-card", {
@@ -708,68 +713,7 @@ function typographyGrid(typography) {
   function notFoundHtml() {
     return renderTemplate("project-not-found", {})
   }
-  function caseStudyHtml(p) {
-  var content = []
-
-  content.push(
-    sectionCard(
-      "[01] PROJECT OVERVIEW",
-      p.colors[0],
-      renderTemplate("project-overview", {
-        overview: escapeHtml(p.overview),
-      }),
-    ),
-  )
-
-  if (p.applications && p.applications.length) {
-    content.push(
-      sectionCard(
-        "[02] APPLICATIONS",
-        p.colors[1],
-        mockupGrid(p.applications, p.colors[0], p.colors[1]),
-      ),
-    )
-  }
-
-  if (p.images && p.images.length) {
-    content.push(
-      sectionCard(
-        "[03] PROJECT GALLERY",
-        p.colors[0],
-        mockupGrid(
-          p.images.map(function (image, i) {
-            return {
-              label: "IMAGE " + String(i + 1).padStart(2, "0"),
-              image: image,
-            }
-          }),
-          p.colors[0],
-          p.colors[1],
-        ),
-      ),
-    )
-  }
-
-  return renderTemplate("project-generic-case-study", {
-    breadcrumb: breadcrumb(
-      p.subtitle ? p.title + " — " + p.subtitle : p.title,
-    ),
-    type: escapeHtml(p.type),
-    title: escapeHtml(p.title),
-    subtitle: p.subtitle
-      ? renderTemplate("project-subtitle", {
-          subtitle: escapeHtml(p.subtitle),
-        })
-      : "",
-    description: escapeHtml(p.description),
-    metadata: meta(p),
-    banner: banner(p),
-    overview: content[0] || "",
-    deliverables: content[1] || "",
-    visualDirection: content[2] || "",
-    navigation: nav(getAdjacentProjects(p.id)),
-  })
-}
+  
   /* ---- Render + select stylesheet themes ---- */
   var page
   if (!project) {
