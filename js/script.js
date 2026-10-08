@@ -264,12 +264,75 @@ var projects = [
       "./image/tuwaiq/adl3.png" , "./image/tuwaiq/adl4.png" , "./image/tuwaiq/adl5.png" , 
     ]
   },
+  {
+    id: "tuwaiq-dday",
+    title: "New Student Welcome Day",
+    categories: ["Social Media" , "Print"],
+    org: "Tuwaiq",
+    label: ["SOC.04","PRT.01"],
+    colors: ["#7c3aed", "#3b82f6"],
+    cover: "./image/tuwaiq/dday.png",
+    year: "2026",
+    type: "Social Media Design",
+    role: "Graphic Designer",
+    tools: ["Canva"],
+    drive : "",
+    description:
+      "Visual identity and event branding for Tuwaiq Club's Data Science & AI initiative — communicating technical ambition through a bold, structured aesthetic.",
+    overview:
+      "This project involved designing a visual system for Tuwaiq Club's data science and AI programming track. The design needed to feel technical and intelligent while remaining approachable and energetic for a university audience. A deep purple-to-blue gradient language was used to signal both depth and innovation.",
+    images: [ 
+      "./image/tuwaiq/dday1.png" , "./image/tuwaiq/dday2.png" , "./image/tuwaiq/dday3.png" ,
+    ]
+  },
+  {
+    id: "tuwaiq-dpsotr",
+    title: "Data Science Poster",
+    categories: ["Social Media" , "Print"],
+    org: "Tuwaiq",
+    label: "SOC.05",
+    colors: ["#7c3aed", "#3b82f6"],
+    cover: "./image/tuwaiq/dpostr.png",
+    year: "2026",
+    type: "Social Media Design",
+    role: "Graphic Designer",
+    tools: ["Canva"],
+    drive : "",
+    description:
+      "Visual identity and event branding for Tuwaiq Club's Data Science & AI initiative — communicating technical ambition through a bold, structured aesthetic.",
+    overview:
+      "This project involved designing a visual system for Tuwaiq Club's data science and AI programming track. The design needed to feel technical and intelligent while remaining approachable and energetic for a university audience. A deep purple-to-blue gradient language was used to signal both depth and innovation.",
+    images: [ 
+      "./image/tuwaiq/dpostr.png" ,
+    ]
+  },
+  {
+    id: "tuwaiq-dron",
+    title: "Saudi Drone Champions League Announcement",
+    categories: ["Social Media" , "Print"],
+    org: "Tuwaiq",
+    label: "SOC.06",
+    colors: ["#7c3aed", "#3b82f6"],
+    cover: "./image/tuwaiq/dron.png",
+    year: "2026",
+    type: "Social Media Design",
+    role: "Graphic Designer",
+    tools: ["Canva"],
+    drive : "",
+    description:
+      "Visual identity and event branding for Tuwaiq Club's Data Science & AI initiative — communicating technical ambition through a bold, structured aesthetic.",
+    overview:
+      "This project involved designing a visual system for Tuwaiq Club's data science and AI programming track. The design needed to feel technical and intelligent while remaining approachable and energetic for a university audience. A deep purple-to-blue gradient language was used to signal both depth and innovation.",
+    images: [ 
+      "./image/tuwaiq/dron.png" ,
+    ]
+  },
 {
     id: "gdg-sisters",
     title: "Big Sisters",
     categories: ["Social Media" , "Print"],
     org: "GDG",
-    label: ["SOC.06" ,"PRT.04"],
+    label: ["SOC.07" ,"PRT.04"],
     colors: ["#ec4899", "#a855f7"],
     cover: "./image/gdg/bigsis.png",
     year: "2025",
@@ -290,7 +353,7 @@ var projects = [
     title: "Data Privacy",
     categories: ["Social Media"],
     org: "GDG",
-    label: "SOC.07",
+    label: "SOC.08",
     colors: ["#3b82f6", "#06b6d4"],
     cover: "./image/gdg/DataPraivcy2.png",
     year: "2026",
@@ -303,7 +366,7 @@ var projects = [
     overview:
       "Data Privacy Day required visual content that communicated complex information clearly while remaining engaging for a general campus audience. The design system used a cool blue palette to signal trust and security, with structured infographic layouts that simplify key privacy concepts.",
     images: [
-         "./image/gdg/DataPrivcy.png" , "./image/gdg/DataPraivcy2.png" ,
+          "./image/gdg/DataPraivcy2.png" , "./image/gdg/DataPraivcy3.png" ,
     ],
   },
    {
@@ -327,27 +390,7 @@ var projects = [
       "./image/tuwaiq/2648.png" ,
     ],
   },
-   {
-    id: "tuwaiq-summer-rollup-banner",
-    title: "Tuwaiq  Summer Rollup Banner",
-    categories: ["Print"],
-    org: "Tuwaiq",
-    label: "PRT.02",
-    colors: ["#3b82f6", "#9333ea"],
-    cover: "./image/tuwaiq/smrbnr.png",
-    year: "2026",
-    type: "Print Design",
-    role: "Graphic Designer",
-    tools: ["Canva"],
-    drive : "",
-    description:
-      "A structured, elegant annual calendar for Tuwaiq Club — organizing the academic year's events, workshops, and key dates into a designed print artifact.",
-    overview:
-      "The Tuwaiq Club Calendar serves as both a practical planning tool and a branded touchpoint. The challenge was to balance data-dense calendar content with the club's visual identity — keeping the design clean and legible while remaining recognizably Tuwaiq. A blue-purple gradient system provides visual hierarchy across months.",
-    images: [
-      "./image/tuwaiq/smrbnr.png",
-    ],
-  },
+
  
     ]
 var orgColors = {
