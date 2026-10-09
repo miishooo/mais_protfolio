@@ -781,37 +781,66 @@ function typographyGrid(typography) {
   }
   root.appendChild(page)
 })()
-;(function initContact() {
-  var card = document.getElementById("contact-card")
-  var form = document.getElementById("contact-form")
-  var submit = document.getElementById("contact-submit")
-  var reset = document.getElementById("contact-reset")
-  if (!card || !form || !submit) return
-  var SEND_DELAY = 1600 // ms the "Sending..." state is shown
-  var fields = form.querySelectorAll(".contact-input")
-  // Keep the glow on inputs after their first focus (same as the original).
+;
+(function initContact() {
+  var card = document.getElementById("contact-card");
+  var form = document.getElementById("contact-form");
+  var submit = document.getElementById("contact-submit");
+  var reset = document.getElementById("contact-reset");
+
+  if (!card || !form || !submit) return;
+
+  // Replace this with your endpoint from FormSubmit.app
+  var FORM_ENDPOINT = "https://formsubmit.app/f/dbg2qrzp6y";
+
+  var fields = form.querySelectorAll(".contact-input");
+
   Array.prototype.forEach.call(fields, function (field) {
     field.addEventListener("focus", function () {
-      field.classList.add("is-touched")
-    })
-  })
-  form.addEventListener("submit", function (e) {
-    e.preventDefault()
-    form.classList.add("is-sending")
-    submit.disabled = true
-    setTimeout(function () {
-      form.classList.remove("is-sending")
-      submit.disabled = false
-      card.classList.add("is-sent")
-    }, SEND_DELAY)
-  })
+      field.classList.add("is-touched");
+    });
+  });
+
+  form.addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    if (form.classList.contains("is-sending")) return;
+
+    form.classList.add("is-sending");
+    submit.disabled = true;
+
+    try {
+      var response = await fetch(FORM_ENDPOINT, {
+        method: "POST",
+        headers: {
+          Accept: "application/json"
+        },
+        body: new FormData(form)
+      });
+
+      var result = await response.json();
+
+      if (!response.ok || result.ok !== true) {
+        throw new Error("Message could not be sent.");
+      }
+
+      card.classList.add("is-sent");
+    } catch (error) {
+      alert("Couldn't send your message. Please try again.");
+    } finally {
+      form.classList.remove("is-sending");
+      submit.disabled = false;
+    }
+  });
+
   if (reset) {
     reset.addEventListener("click", function () {
-      card.classList.remove("is-sent")
-      form.reset()
+      card.classList.remove("is-sent");
+      form.reset();
+
       Array.prototype.forEach.call(fields, function (field) {
-        field.classList.remove("is-touched")
-      })
-    })
+        field.classList.remove("is-touched");
+      });
+    });
   }
-})()
+})();
