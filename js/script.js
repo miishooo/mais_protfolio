@@ -53,9 +53,9 @@ var projects = [
   ],
 
     description:
-      "A botanical lifestyle brand built around natural beauty, handcrafted products, and an organic visual identity that feels both modern and rooted in nature.",
+      "A fictional floral brand identity designed for a flower shop, featuring a simple and playful visual style",
     overview:
-      "Florra is a botanical lifestyle brand specializing in handcrafted plant-based products — skincare, home fragrances, and wellness goods. The brand needed a visual identity that communicated natural beauty, artisanal quality, and modern minimalism. The project included the full identity system: logo design, color palette, typography selection, brand guidelines, and application across packaging, stationery, and digital templates.",
+      "Created as part of a design challenge organized by the student club. I developed the complete visual identity using Canva and earned third place in the challenge.",
     deliverables: [
       "Logo System",
       "Color Palette",
@@ -100,11 +100,9 @@ var projects = [
   ],
 
   description:
-    "A clean, modern brand identity for AMI Studio — a photography and creative studio. The identity centers on minimalism, precision, and a sophisticated blue palette that evokes trust and clarity.",
-
+    "A visual identity for my small business, created as a personal reference for future brand-related designs",
   overview:
-    "AMI Studio required a professional identity system that would communicate quality, precision, and creativity. The visual language draws from photography's relationship with light — clean whites, structured layouts, and a confident blue signature color. The result is a brand that feels premium without being cold.",
-
+    "I designed this identity to maintain visual consistency across the brand's future materials. Using Canva, I developed a simple, playful style with soft, harmonious colors. I also created illustrated characters representing me and my business partner, and selected typefaces that complement the brand's friendly personality",
    deliverables: [
       "Logo System",
       "Color Palette",
@@ -133,7 +131,7 @@ var projects = [
   },
   {
     id: "tuwaiq-summer",
-    title: "Summer Challenge",
+    title: "Summer Educational Content",
     categories: ["Educational Design"],
     org: "Tuwaiq",
     label: "EDU.01",
@@ -145,9 +143,9 @@ var projects = [
     tools: ["Canva"],
     drive : "https://drive.google.com/drive/folders/1hd-S9j-WYoF9BRAxTGIK9sxRpzR_YP9w?usp=drive_link",
     description:
-      "High-energy visual design system for Tuwaiq Club's Summer Challenge — an intensive skills program designed to energize students over the summer break.",
+    "An educational content series developed for the Design and Content Committee at Tuwaiq Club, covering four key topics: design fundamentals, AI tools, visual identity, and UI/UX", 
     overview:
-      "The Summer Challenge required an identity that felt vibrant, motivating, and distinct from the club's standard visual language. An orange-to-yellow gradient palette was selected to communicate energy, warmth, and the spirit of achievement. The system covers promotional materials, digital assets, and in-event signage.",
+    "I developed and designed the educational materials for the committee's summer learning program. The topics were selected to address members' interests and support their creative growth by introducing practical concepts and tools relevant to their development as designers", 
     images: ["./image/tuwaiq/edu/1.png" ,"./image/tuwaiq/edu/6.png" , "./image/tuwaiq/edu/7.png" , "./image/tuwaiq/edu/9.png" ,
     "./image/tuwaiq/edu/13.png" ,"./image/tuwaiq/edu/17.png" , "./image/tuwaiq/edu/20.png" ,"./image/tuwaiq/edu/21.png" ,
     
@@ -168,9 +166,9 @@ var projects = [
     tools: ["ibiesPaint" ,"Alight Motion"],
     drive : "https://drive.google.com/file/d/1XEfOtvdEcCISYKcdyLjN_gAZ-mDSXrt4/view?usp=drive_link",
     description:
-      "A celebratory animation for Faundition Day.",
+    "A motion graphics video encouraging students to join Tuwaiq Student Club.", 
     overview:
-      "Faundition Day is",
+      "Created using Alight Motion, the video introduces the club's tracks and committees to help students explore the available opportunities and make informed choices about where to get involved.",
     images: [
       "./image/motion/Tuwaiq.mp4" ,
     ],
@@ -190,11 +188,32 @@ var projects = [
     tools: ["ibiesPaint" ,"Alight Motion"],
     drive : "https://drive.google.com/file/d/12kkUQWmWp-jV1gCPXhHJ6PUHmcL2yT4X/view?usp=drive_link",
     description:
-      "A celebratory animation for Faundition Day.",
+      "An animation celebrating Saudi Founding Day and the Kingdom's cultural heritage..",
     overview:
-      "Faundition Day is",
+      "I contributed by illustrating and animating the camel and background elements. The animation conveys the idea that, despite ongoing progress and modernization, Saudi Arabia continues to preserve its identity and heritage.",
     images: [
       "./image/motion/FDay.mp4" ,
+    ],
+  },
+
+ { id: "google-club-opening - GDG",
+    title: "Google Club Opening Animation",
+    categories: ["Motion"],
+    org: "GDG",
+    label: "MOT.02",
+    colors: ["#a855f7", "#06b6d4"],
+    cover: "./image/motion/big.png",
+    year: "2026",
+    type: "Animation & Motion Design",
+    role: "Graphic Designer",
+    tools: ["ibiesPaint" ,"Alight Motion"],
+    drive : "https://drive.google.com/file/d/1WPsxLSfsH1oiZNooUYWoLUm-lrVGGTBM/view?usp=drive_link",
+    description:
+      "An animation created to celebrate the opening of Google Developer Groups at the university.",
+    overview:
+      "The animation uses visual transitions to introduce the club and mark the beginning of a new chapter for the community",
+    images: [
+      "./image/motion/big.mp4" ,
     ],
   },
 
@@ -210,11 +229,11 @@ var projects = [
     type: "Social Media Design",
     role: "Graphic Designer",
     tools: ["Canva"],
-    drive : "",
+    drive : "https://drive.google.com/file/d/1tTYL82-xNWjHywmclfFkO5u1VGbqitff/view?usp=drive_link",
     description:
-      "A celebratory social media series for International Programmer's Day — combining technical motifs with a vibrant purple-cyan palette.",
+    "A social media post celebrating International Programmers' Day through a technology-inspired visual concept", 
     overview:
-      "Programmer's Day is observed on the 256th day of the year — a number meaningful to every developer. This social media series celebrates the occasion with designs that honor the craft: code snippets, terminal aesthetics, and digital patterns woven into a festive but technically aware visual language.",
+    "I created a celebratory design with a programming-inspired aesthetic, using visual elements to express the limitless possibilities of technology and the ideas it can bring to life.",
     images: [
       "./image/p/pgd.png" ,
     ],
@@ -233,9 +252,9 @@ var projects = [
     tools: ["Canva"],
     drive : "https://drive.google.com/drive/folders/1DmYPoHMoFSh9r2MXNbkNE3plFRWB-dDy?usp=drive_link",
     description:
-      "Visual identity and event branding for Tuwaiq Club's Data Science & AI initiative — communicating technical ambition through a bold, structured aesthetic.",
+    "Promotional graphics for a workshop introducing the Data Science and Artificial Intelligence track.",
     overview:
-      "This project involved designing a visual system for Tuwaiq Club's data science and AI programming track. The design needed to feel technical and intelligent while remaining approachable and energetic for a university audience. A deep purple-to-blue gradient language was used to signal both depth and innovation.",
+      "I contributed to refining the visual quality of the design in collaboration with other track members. The work focused on establishing a technology-inspired look while presenting the workshop information clearly.",
     images: [ 
       "./image/tuwaiq/DSAI3.png" , "./image/tuwaiq/DSAI1.png" , "./image/tuwaiq/DSAI2.png" ,
 
@@ -256,9 +275,9 @@ var projects = [
     tools: ["Canva"],
     drive : "https://drive.google.com/drive/folders/1p6L9ScwxxGf2EtiNs-SO133uiqGCDi9I?usp=drive_link",
     description:
-      "Visual identity and event branding for Tuwaiq Club's Data Science & AI initiative — communicating technical ambition through a bold, structured aesthetic.",
+    "A set of promotional and educational designs for a four-day technical program focused on cybersecurity.",  
     overview:
-      "This project involved designing a visual system for Tuwaiq Club's data science and AI programming track. The design needed to feel technical and intelligent while remaining approachable and energetic for a university audience. A deep purple-to-blue gradient language was used to signal both depth and innovation.",
+    "I contributed to improving the overall visual quality and organizing the educational content, ensuring that the information worked well with the visual elements and remained clear and accessible.",
     images: [ 
       "./image/tuwaiq/adl.png" , "./image/tuwaiq/adl1.png", "./image/tuwaiq/adl2.png" ,
       "./image/tuwaiq/adl3.png" , "./image/tuwaiq/adl4.png" , "./image/tuwaiq/adl5.png" , 
@@ -276,11 +295,11 @@ var projects = [
     type: "Social Media Design",
     role: "Graphic Designer",
     tools: ["Canva"],
-    drive : "",
+    drive : "https://drive.google.com/drive/folders/17Fcs-puqqkYaiEu2SWVj9Zido1yN_UDl?usp=drive_link",
     description:
-      "Visual identity and event branding for Tuwaiq Club's Data Science & AI initiative — communicating technical ambition through a bold, structured aesthetic.",
+    "A collection of designs created for the 1448 - 2026 academic year welcome event for new female students.", 
     overview:
-      "This project involved designing a visual system for Tuwaiq Club's data science and AI programming track. The design needed to feel technical and intelligent while remaining approachable and energetic for a university audience. A deep purple-to-blue gradient language was used to signal both depth and innovation.",
+    "I collaborated with the committee's design team to create the event's visual materials, including promotional announcements, printed giveaways, and a poster, helping maintain a consistent look across the event's materials.",
     images: [ 
       "./image/tuwaiq/dday1.png" , "./image/tuwaiq/dday2.png" , "./image/tuwaiq/dday3.png" ,
     ]
@@ -297,11 +316,11 @@ var projects = [
     type: "Social Media Design",
     role: "Graphic Designer",
     tools: ["Canva"],
-    drive : "",
+    drive : "https://drive.google.com/file/d/1Pb7Mav2Y1_N7pPv9VWGAwW4VKRiPf1IQ/view?usp=drive_link",
     description:
-      "Visual identity and event branding for Tuwaiq Club's Data Science & AI initiative — communicating technical ambition through a bold, structured aesthetic.",
+    "An informational poster showcasing online platforms for learning data science.", 
     overview:
-      "This project involved designing a visual system for Tuwaiq Club's data science and AI programming track. The design needed to feel technical and intelligent while remaining approachable and energetic for a university audience. A deep purple-to-blue gradient language was used to signal both depth and innovation.",
+   "I designed the poster to present the featured learning platforms clearly and attractively, helping students discover available resources and encouraging them to explore opportunities to learn data science.",  
     images: [ 
       "./image/tuwaiq/dpostr.png" ,
     ]
@@ -318,11 +337,11 @@ var projects = [
     type: "Social Media Design",
     role: "Graphic Designer",
     tools: ["Canva"],
-    drive : "",
+    drive : "https://drive.google.com/file/d/13GQ54HUQ0Ua9QBbuhgGwg3B6vC-xXW4E/view?usp=drive_link",
     description:
-      "Visual identity and event branding for Tuwaiq Club's Data Science & AI initiative — communicating technical ambition through a bold, structured aesthetic.",
+    "A promotional design introducing the Saudi Drone Champions League.",
     overview:
-      "This project involved designing a visual system for Tuwaiq Club's data science and AI programming track. The design needed to feel technical and intelligent while remaining approachable and energetic for a university audience. A deep purple-to-blue gradient language was used to signal both depth and innovation.",
+    "I designed the announcement to introduce the program and highlight its key features, presenting the information in a clear, engaging visual format.",
     images: [ 
       "./image/tuwaiq/dron.png" ,
     ]
@@ -341,9 +360,9 @@ var projects = [
     tools: ["Canva"],
     drive : "https://drive.google.com/drive/folders/1zC2WVG0oa9l37N8Q-M3hpBBNzraY1cxn?usp=drive_link",
     description:
-      "Community-focused social media design for the GDG Big Sisters initiative — supporting women in technology through mentorship and community at University of Al-Baha.",
+    "Design materials for a Google Developer Groups initiative that connects younger female students with older students for guidance and support.",
     overview:
-      "The Big Sisters program connects experienced women in tech with students entering the field. The visual identity needed to feel welcoming, empowering, and distinct from standard GDG chapter branding. A pink-to-purple gradient language was developed to create warmth and identity while staying within the broader GDG ecosystem.",
+    "I used a soft, welcoming color palette to create a friendly and approachable visual style that reflects the initiative's focus on connection, guidance, and a sense of belonging.", 
     images: [ 
       "./image/gdg/bigsis1.jpeg" , "./image/gdg/bigsis2.png" , "./image/gdg/bigsis3.png" , "./image/gdg/bigsis4.png" , "./image/gdg/bigsis5.png" ,
     ]
@@ -360,11 +379,11 @@ var projects = [
     type: "Social Media Design",
     role: "Graphic Designer",
     tools: ["Canva"],
-    drive : "",
+    drive : "https://drive.google.com/file/d/1XmO5TCdRY084dY_lZKTfkSJxb-ejv41Q/view?usp=drive_link",
     description:
-      "Awareness campaign visuals for Google Developer Groups Al-Baha — Data Privacy Day. Clear, informative design that makes technical privacy concepts accessible.",
+    "A series of awareness posts promoting data privacy and personal data protection.",  
     overview:
-      "Data Privacy Day required visual content that communicated complex information clearly while remaining engaging for a general campus audience. The design system used a cool blue palette to signal trust and security, with structured infographic layouts that simplify key privacy concepts.",
+    "The designs highlight individuals' rights regarding their personal data and introduce ways to protect it. The goal was to communicate key privacy concepts clearly and encourage greater awareness of responsible data handling.", 
     images: [
           "./image/gdg/DataPraivcy2.png" , "./image/gdg/DataPraivcy3.png" ,
     ],
@@ -381,11 +400,11 @@ var projects = [
     type: "Print Design",
     role: "Graphic Designer",
     tools: ["Canva"],
-    drive : "",
+    drive : "https://drive.google.com/file/d/1ZPstNQ3dl33oXn34VW4SRyocjyh54vkP/view?usp=drive_link",
     description:
-      "A structured, elegant annual calendar for Tuwaiq Club — organizing the academic year's events, workshops, and key dates into a designed print artifact.",
+    "A calendar for the 1448 AH / 2026 academic year, designed for Tuwaiq Club.", 
     overview:
-      "The Tuwaiq Club Calendar serves as both a practical planning tool and a branded touchpoint. The challenge was to balance data-dense calendar content with the club's visual identity — keeping the design clean and legible while remaining recognizably Tuwaiq. A blue-purple gradient system provides visual hierarchy across months.",
+    "I designed a practical academic calendar featuring the semester weeks, scheduled holidays, and dedicated space for personal goals. The layout combines useful academic planning information with a clear, organized visual structure.",  
     images: [
       "./image/tuwaiq/2648.png" ,
     ],

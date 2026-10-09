@@ -2248,14 +2248,14 @@ img {
 }
 
 /* bar length per skill */
-.about-skill--ui-ux      { --level: 90%; }
-.about-skill--graphic    { --level: 92%; }
-.about-skill--branding   { --level: 85%; }
-.about-skill--motion     { --level: 75%; }
-.about-skill--html-css   { --level: 88%; }
-.about-skill--javascript { --level: 72%; }
-.about-skill--php        { --level: 65%; }
-.about-skill--mysql      { --level: 68%; }
+.about-skill--ui-ux      { --level: 75%; }
+.about-skill--graphic    { --level: 100%; }
+.about-skill--branding   { --level: 80%; }
+.about-skill--motion     { --level: 85%; }
+.about-skill--html-css   { --level: 95%; }
+.about-skill--javascript { --level: 88%; }
+.about-skill--php        { --level: 80%; }
+.about-skill--mysql      { --level: 80%; }
 
 .about-skill {
   display: flex;
