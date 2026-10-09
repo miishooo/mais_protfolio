@@ -782,6 +782,7 @@ function typographyGrid(typography) {
   root.appendChild(page)
 })()
 ;
+
 (function initContact() {
   var card = document.getElementById("contact-card");
   var form = document.getElementById("contact-form");
@@ -790,9 +791,7 @@ function typographyGrid(typography) {
 
   if (!card || !form || !submit) return;
 
-  // Replace this with your endpoint from FormSubmit.app
   var FORM_ENDPOINT = "https://formsubmit.app/f/dbg2qrzp6y";
-
   var fields = form.querySelectorAll(".contact-input");
 
   Array.prototype.forEach.call(fields, function (field) {
@@ -810,23 +809,31 @@ function typographyGrid(typography) {
     submit.disabled = true;
 
     try {
+      var data = new FormData(form);
+      data.set("_ts", String(Date.now()));
+
       var response = await fetch(FORM_ENDPOINT, {
         method: "POST",
+        body: data,
         headers: {
           Accept: "application/json"
-        },
-        body: new FormData(form)
+        }
       });
 
       var result = await response.json();
 
-      if (!response.ok || result.ok !== true) {
-        throw new Error("Message could not be sent.");
+      if (!response.ok || !result.ok) {
+        throw new Error(
+          result.error?.message || "Something went wrong"
+        );
       }
 
       card.classList.add("is-sent");
     } catch (error) {
-      alert("Couldn't send your message. Please try again.");
+      console.error("Contact form error:", error);
+      alert(
+        "Couldn't send your message. Please try again."
+      );
     } finally {
       form.classList.remove("is-sending");
       submit.disabled = false;
